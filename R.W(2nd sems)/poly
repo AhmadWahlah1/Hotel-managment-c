@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+class Alpha{
+	int data;
+	public:
+		Alpha(){
+			data=3;
+		}
+		friend int frifunc(Alpha,beta);
+};
+class beta{
+	int data;
+	public:
+		beta(){
+			data=1;
+		}
+		friend int frifunc(Alpha,beta);
+};
+int frifunc(Alpha a,beta b){
+	int c;
+	c=a.data+b.data;
+	return c;
+}
+main(){
+	int k;
+	Alpha a1;
+	beta a2;
+	k = frifunc(a1,a2);
+	cout<<"total: "<<k;
+}

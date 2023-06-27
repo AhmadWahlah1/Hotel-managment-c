@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+struct emp{
+	char name[20];
+	int id;
+};
+main(){
+	emp p1;
+	cout<<"Enter your name: ";
+	cin>>p1.name;
+	cout<<"Enter your Roll.No: ";
+	cin>>p1.id;
+    cout<<"1st person:\nname: "<<p1.name[20]<<"\nRoll No: "<<p1.id<<endl;
+}
